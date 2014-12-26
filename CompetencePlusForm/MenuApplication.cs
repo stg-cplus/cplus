@@ -88,12 +88,14 @@ namespace CompetencePlus
         {
             //try
             //{
-            //    new IncrementDB_BAO().Initialisation();
+                new IncrementDB_BAO().Initialisation();
             //}
             //catch (Exception exception)
-            //{
+            ////{
             //    MessageBox.Show(exception.Message);
-              
+            //    this.Close();
+               
+
             //}
         }
 

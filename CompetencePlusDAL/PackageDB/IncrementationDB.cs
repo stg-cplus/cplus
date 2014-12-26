@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.Serialization;
 
 namespace CompetencePlus.PackageDB
 {
-   public class IncrementationDB
+  
+    public class IncrementationDB 
     {
         int id;
 
@@ -14,6 +16,24 @@ namespace CompetencePlus.PackageDB
             get { return id; }
             set { id = value; }
         }
+
+        DateTime dateCreation;
+
+        public DateTime DateCreation
+        {
+            get { return dateCreation; }
+            set { dateCreation = value; }
+        }
+
+        String titre;
+
+        public String Titre
+        {
+            get { return titre; }
+            set { titre = value; }
+        }
+
+
         string code;
 
         public string Code
@@ -35,5 +55,7 @@ namespace CompetencePlus.PackageDB
             get { return decrement; }
             set { decrement = value; }
         }
+
+         
     }
 }

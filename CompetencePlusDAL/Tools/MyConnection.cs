@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.OleDb;
+using ADOX; //Requires Microsoft ADO Ext. 2.8 for DDL and Security
+
  
 
 namespace CompetencePlus.Outils
@@ -18,7 +20,7 @@ namespace CompetencePlus.Outils
         ///  En mode développement la base de données doit être installé dans le chemin suivant "C:\db_cplus\db_cplus.accdb"
         ///  En mode déploiement la base de données doit être installer dans le répertoire projet
         /// string ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\CompétencePlus.accdb;Persist Security Info=True";
-        static string ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source= C:\db_cplus\db_cplus.accdb;Persist Security Info=True";
+        static string ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source= db_cplus.accdb;Persist Security Info=True";
 
         
         
@@ -26,15 +28,16 @@ namespace CompetencePlus.Outils
         /// Exécuter les requêtes SQL : Update, Delete, Insert
         /// </summary>
         /// <param name="Requete">La requête SQL à exécuter</param>
-        public static void ExecuteNonQuery(string Requete)
+        public static int ExecuteNonQuery(string Requete)
         {
 
             Connection = new OleDbConnection(ConnectionString);
             Command = Connection.CreateCommand();
             Command.CommandText = Requete;
             Connection.Open();
-            Command.ExecuteNonQuery();
+            int result =  Command.ExecuteNonQuery();
             Connection.Close();
+            return result;
         }
         /// <summary>
         /// Exécute la requête SQL : Select
@@ -99,6 +102,33 @@ namespace CompetencePlus.Outils
 
                 return false; 
             }
+        }
+
+        static public bool CreateNewAccessDatabase(string fileName)
+        {
+            bool result = false;
+            ADOX.Catalog cat = new ADOX.Catalog();
+            ADOX.Table table = new ADOX.Table();
+            //Create the table and it's fields. 
+            table.Name = "Table1";
+            table.Columns.Append("Field1");
+            table.Columns.Append("Field2");
+            try
+            {
+                cat.Create("Provider=Microsoft.Jet.OLEDB.4.0;" + "Data Source=" + fileName + "; Jet OLEDB:Engine Type=5");
+                cat.Tables.Append(table);
+                //Now Close the database
+                ADODB.Connection con = cat.ActiveConnection as ADODB.Connection;
+                if (con != null)
+                    con.Close();
+                result = true;
+            }
+            catch (Exception ex)
+            {
+                result = false;
+            }
+            cat = null;
+            return result;
         }
 
 

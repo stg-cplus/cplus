@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.IncTextBox = new System.Windows.Forms.TextBox();
-            this.DecTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.BtExecute = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btSuivant = new System.Windows.Forms.Button();
+            this.textBoxTitre = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btCreateTable = new System.Windows.Forms.Button();
+            this.btAlterTable = new System.Windows.Forms.Button();
             this.incrementationDBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -51,47 +51,28 @@
             // 
             this.IncTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.incrementationDBBindingSource, "Increment", true));
             this.IncTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IncTextBox.Location = new System.Drawing.Point(6, 46);
+            this.IncTextBox.Location = new System.Drawing.Point(6, 87);
             this.IncTextBox.Multiline = true;
             this.IncTextBox.Name = "IncTextBox";
-            this.IncTextBox.Size = new System.Drawing.Size(386, 126);
+            this.IncTextBox.Size = new System.Drawing.Size(386, 373);
             this.IncTextBox.TabIndex = 0;
-            // 
-            // DecTextBox
-            // 
-            this.DecTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.incrementationDBBindingSource, "Decrement", true));
-            this.DecTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.DecTextBox.Location = new System.Drawing.Point(6, 198);
-            this.DecTextBox.Multiline = true;
-            this.DecTextBox.Name = "DecTextBox";
-            this.DecTextBox.Size = new System.Drawing.Size(386, 122);
-            this.DecTextBox.TabIndex = 1;
+            this.IncTextBox.TextChanged += new System.EventHandler(this.IncTextBox_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 23);
+            this.label1.Location = new System.Drawing.Point(6, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Increment";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 175);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Decrement";
-            // 
             // BtExecute
             // 
-            this.BtExecute.Location = new System.Drawing.Point(446, 360);
+            this.BtExecute.Location = new System.Drawing.Point(786, 436);
             this.BtExecute.Name = "BtExecute";
-            this.BtExecute.Size = new System.Drawing.Size(75, 23);
+            this.BtExecute.Size = new System.Drawing.Size(103, 42);
             this.BtExecute.TabIndex = 4;
             this.BtExecute.Text = "Execute";
             this.BtExecute.UseVisualStyleBackColor = true;
@@ -99,6 +80,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -106,7 +89,8 @@
             this.dataGridView1.DataSource = this.incrementationDBBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(20, 19);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(210, 301);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(338, 424);
             this.dataGridView1.TabIndex = 5;
             // 
             // groupBox1
@@ -114,41 +98,60 @@
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(252, 337);
+            this.groupBox1.Size = new System.Drawing.Size(364, 461);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Versions";
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBoxTitre);
             this.groupBox2.Controls.Add(this.IncTextBox);
+            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.DecTextBox);
-            this.groupBox2.Location = new System.Drawing.Point(270, 12);
+            this.groupBox2.Location = new System.Drawing.Point(382, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(398, 337);
+            this.groupBox2.Size = new System.Drawing.Size(398, 467);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Requête";
             // 
-            // button1
+            // textBoxTitre
             // 
-            this.button1.Location = new System.Drawing.Point(293, 360);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Version précident";
-            this.button1.UseVisualStyleBackColor = true;
+            this.textBoxTitre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTitre.Location = new System.Drawing.Point(52, 19);
+            this.textBoxTitre.Name = "textBoxTitre";
+            this.textBoxTitre.Size = new System.Drawing.Size(333, 26);
+            this.textBoxTitre.TabIndex = 0;
             // 
-            // btSuivant
+            // label3
             // 
-            this.btSuivant.Location = new System.Drawing.Point(552, 360);
-            this.btSuivant.Name = "btSuivant";
-            this.btSuivant.Size = new System.Drawing.Size(116, 23);
-            this.btSuivant.TabIndex = 9;
-            this.btSuivant.Text = "Version suivant";
-            this.btSuivant.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Titre";
+            // 
+            // btCreateTable
+            // 
+            this.btCreateTable.Location = new System.Drawing.Point(786, 31);
+            this.btCreateTable.Name = "btCreateTable";
+            this.btCreateTable.Size = new System.Drawing.Size(103, 43);
+            this.btCreateTable.TabIndex = 10;
+            this.btCreateTable.Text = "Création Table";
+            this.btCreateTable.UseVisualStyleBackColor = true;
+            this.btCreateTable.Click += new System.EventHandler(this.btCreateTable_Click);
+            // 
+            // btAlterTable
+            // 
+            this.btAlterTable.Location = new System.Drawing.Point(786, 80);
+            this.btAlterTable.Name = "btAlterTable";
+            this.btAlterTable.Size = new System.Drawing.Size(103, 43);
+            this.btAlterTable.TabIndex = 10;
+            this.btAlterTable.Text = "Ajouter Colonne";
+            this.btAlterTable.UseVisualStyleBackColor = true;
             // 
             // incrementationDBBindingSource
             // 
@@ -159,14 +162,16 @@
             this.codeDataGridViewTextBoxColumn.DataPropertyName = "Code";
             this.codeDataGridViewTextBoxColumn.HeaderText = "Code";
             this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
+            this.codeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.codeDataGridViewTextBoxColumn.Width = 300;
             // 
             // FormGestionDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 398);
-            this.Controls.Add(this.btSuivant);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(907, 484);
+            this.Controls.Add(this.btAlterTable);
+            this.Controls.Add(this.btCreateTable);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtExecute);
@@ -185,16 +190,16 @@
         #endregion
 
         private System.Windows.Forms.TextBox IncTextBox;
-        private System.Windows.Forms.TextBox DecTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtExecute;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btSuivant;
         private System.Windows.Forms.BindingSource incrementationDBBindingSource;
+        private System.Windows.Forms.Button btCreateTable;
+        private System.Windows.Forms.Button btAlterTable;
+        private System.Windows.Forms.TextBox textBoxTitre;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeDataGridViewTextBoxColumn;
     }
 }
