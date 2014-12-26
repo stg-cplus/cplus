@@ -2,5 +2,16 @@ CompetencePlusBAL/bin
 CompetencePlusBAL/obj
 CompetencePlusDAL/bin
 CompetencePlusDAL/obj
-CompetencePlusForm/bin
 CompetencePlusForm/obj
+CompetencePlusForm/bin/Debug/fr
+CompetencePlusForm/bin/Debug/CompetencePlusBAL.dll
+CompetencePlusForm/bin/Debug/CompetencePlusBAL.pdb
+CompetencePlusForm/bin/Debug/CompetencePlusDAL.dll
+CompetencePlusForm/bin/Debug/CompetencePlusDAL.pdb
+CompetencePlusForm/bin/Debug/CompetencePlusForm.exe
+CompetencePlusForm/bin/Debug/CompetencePlusForm.pdb
+CompetencePlusForm/bin/Debug/CompetencePlusForm.vshost.exe
+CompetencePlusForm/bin/CompetencePlusForm.vshost.exe.manifest
+
+
+CompetencePlusForm/bin/Debug/db_cplus.accdb
