@@ -325,6 +325,12 @@
   <data name="gestionDinformationToolStripMenuItem.Text" xml:space="preserve">
     <value>Options</value>
   </data>
+  <data name="dataBaseManagementToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 20</value>
+  </data>
+  <data name="dataBaseManagementToolStripMenuItem.Text" xml:space="preserve">
+    <value>DataBase Management</value>
+  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -568,6 +574,12 @@
     <value>niveauxDesCompétencesToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;niveauxDesCompétencesToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataBaseManagementToolStripMenuItem.Name" xml:space="preserve">
+    <value>dataBaseManagementToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;dataBaseManagementToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
