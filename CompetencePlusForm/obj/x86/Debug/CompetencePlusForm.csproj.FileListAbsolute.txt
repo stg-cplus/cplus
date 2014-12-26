@@ -94,3 +94,4 @@ C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusForm\obj\x86\Debug
 C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusForm\obj\x86\Debug\fr\CompetencePlusForm.resources.dll
 C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusForm\obj\x86\Debug\CompetencePlusForm.exe
 C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusForm\obj\x86\Debug\CompetencePlusForm.pdb
+C:\Users\ESSARRAJ\Documents\GitHub\cplus\CompetencePlusForm\obj\x86\Debug\CompetencePlus.PackageDB.FormGestionDB.resources
