@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <Titre>CREATE-TABLE(</Titre>
+  <Code>CREATE-TABLE- NomTable </Code>
+  <Increment>
+  CREATE TABLE NomTable (
+  ID AUTOINCREMENT PRIMARY KEY,
+  Titre varchar(255),
+  Code varchar(255),
+  Description varchar(255)
+  );
+</Increment>
+  <Decrement > Drop Table NomTable </Decrement>
+</IncrementationDB>

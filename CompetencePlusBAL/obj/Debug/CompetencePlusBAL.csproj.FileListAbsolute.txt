@@ -40,3 +40,10 @@ C:\Users\ESSARRAJ\Documents\GitHub\cplus\CompetencePlusBAL\bin\Debug\CompetenceP
 C:\Users\ESSARRAJ\Documents\GitHub\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.csprojResolveAssemblyReference.cache
 C:\Users\ESSARRAJ\Documents\GitHub\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.dll
 C:\Users\ESSARRAJ\Documents\GitHub\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.pdb
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusBAL\bin\Debug\CompetencePlusBAL.dll
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusBAL\bin\Debug\CompetencePlusBAL.pdb
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusBAL\bin\Debug\CompetencePlusDAL.dll
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusBAL\bin\Debug\CompetencePlusDAL.pdb
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.csprojResolveAssemblyReference.cache
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.dll
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.pdb
