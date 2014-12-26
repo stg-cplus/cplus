@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="PackageAbsences\Class2.cs" />
     <Compile Include="PackageAnneeFormations\Class2.cs" />
+    <Compile Include="PackageDB\FormGestionDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackageDB\FormGestionDB.Designer.cs">
+      <DependentUpon>FormGestionDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="PackageEmploisTemps\Class2.cs" />
     <Compile Include="PackageFilieres\FormFiliere.cs">
       <SubType>Form</SubType>
@@ -136,6 +142,9 @@
     <EmbeddedResource Include="MenuApplication.resx">
       <DependentUpon>MenuApplication.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PackageDB\FormGestionDB.resx">
+      <DependentUpon>FormGestionDB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PackageFilieres\FormFiliere.resx">
       <DependentUpon>FormFiliere.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +188,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\CompetencePlus.PackageDB.IncrementationDB.datasource" />
     <None Include="Properties\DataSources\CompetencePlus.PackageFilieres.Filiere.datasource" />
     <None Include="Properties\DataSources\CompetencePlus.PackageGroupes.Groupe.datasource" />
     <None Include="Properties\Settings.settings">
@@ -225,7 +235,6 @@
   <ItemGroup>
     <None Include="Resources\Profile.png" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
