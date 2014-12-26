@@ -55,6 +55,52 @@ namespace CompetencePlus.Outils
         /// </summary>
         public static void Close (){
             Connection.Close();
-          }
+        }
+
+        /// <summary>
+        /// Vérifier l'existence de la base de données
+        /// </summary>
+        /// <returns></returns>
+        public static bool isDabaseExist() {
+            try
+            {
+                Connection = new OleDbConnection(ConnectionString);
+                Connection.Open();
+                Connection.Close();
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+           
+        }
+
+        /// <summary>
+        /// Vérificer l'existance d'une table
+        /// </summary>
+        /// <param name="NomTable">le nom de la table à vérifier</param>
+        /// <returns></returns>
+        public static bool isTableExist(string NomTable)
+        {
+            try
+            {
+                String Requete = "select * from " + NomTable;
+                Connection = new OleDbConnection(ConnectionString);
+                Command = Connection.CreateCommand();
+                Command.CommandText = Requete;
+                Connection.Open();
+                Command.ExecuteReader();
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false; 
+            }
+        }
+
+
     }
 }

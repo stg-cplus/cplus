@@ -83,5 +83,23 @@ namespace CompetencePlus
             FormGestionDB f = new FormGestionDB();
             f.Show();
         }
+
+        private void MenuApplication_Load(object sender, EventArgs e)
+        {
+            //try
+            //{
+            //    new IncrementDB_BAO().Initialisation();
+            //}
+            //catch (Exception exception)
+            //{
+            //    MessageBox.Show(exception.Message);
+              
+            //}
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

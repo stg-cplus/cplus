@@ -23,8 +23,14 @@ namespace CompetencePlus.PackageDB
             inc.Code = DateTime.Today.ToString()+"/";
             inc.Increment = IncTextBox.Text;
             inc.Decrement = DecTextBox.Text;
-            new IncrementDB_DAO().Add(inc);
-            new IncrementDB_DAO().Create(IncTextBox.Text);
+            new IncrementDB_BAO().Add(inc);
+            new IncrementDB_BAO().Create(IncTextBox.Text);
+           
+        }
+
+        private void FormGestionDB_Load(object sender, EventArgs e)
+        {
+            
            
         }
     }
