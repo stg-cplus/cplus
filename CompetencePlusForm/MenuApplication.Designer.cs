@@ -64,6 +64,7 @@
             this.catégogieDactivitéToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.compétenceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.niveauxDesCompétencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataBaseManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +76,8 @@
             this.gestionIndividuToolStripMenuItem,
             this.formationsToolStripMenuItem,
             this.pédagogieToolStripMenuItem,
-            this.gestionDinformationToolStripMenuItem});
+            this.gestionDinformationToolStripMenuItem,
+            this.dataBaseManagementToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
@@ -295,6 +297,12 @@
             this.niveauxDesCompétencesToolStripMenuItem.Name = "niveauxDesCompétencesToolStripMenuItem";
             resources.ApplyResources(this.niveauxDesCompétencesToolStripMenuItem, "niveauxDesCompétencesToolStripMenuItem");
             // 
+            // dataBaseManagementToolStripMenuItem
+            // 
+            this.dataBaseManagementToolStripMenuItem.Name = "dataBaseManagementToolStripMenuItem";
+            resources.ApplyResources(this.dataBaseManagementToolStripMenuItem, "dataBaseManagementToolStripMenuItem");
+            this.dataBaseManagementToolStripMenuItem.Click += new System.EventHandler(this.dataBaseManagementToolStripMenuItem_Click);
+            // 
             // MenuApplication
             // 
             resources.ApplyResources(this, "$this");
@@ -350,5 +358,6 @@
         private System.Windows.Forms.ToolStripMenuItem lesSéancesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem compétenceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem niveauxDesCompétencesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataBaseManagementToolStripMenuItem;
     }
 }

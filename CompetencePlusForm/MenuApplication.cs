@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using CompetencePlus.PackageFilieres;
 using CompetencePlus.PackageStagiaires;
 using CompetencePlus.PackageGroupes;
+using CompetencePlus.PackageDB;
 
 namespace CompetencePlus
 {
@@ -75,6 +76,12 @@ namespace CompetencePlus
         private void suiviToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataBaseManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormGestionDB f = new FormGestionDB();
+            f.Show();
         }
     }
 }
