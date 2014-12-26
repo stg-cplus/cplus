@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using CompetencePlus.PackageFilieres;
 using CompetencePlus.PackageStagiaires;
 using CompetencePlus.PackageGroupes;
+using CompetencePlus.PackageDB;
 
 namespace CompetencePlus
 {
@@ -73,6 +74,32 @@ namespace CompetencePlus
         }
 
         private void suiviToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataBaseManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormGestionDB f = new FormGestionDB();
+            f.Show();
+        }
+
+        private void MenuApplication_Load(object sender, EventArgs e)
+        {
+            //try
+            //{
+                new IncrementDB_BAO().Initialisation();
+            //}
+            //catch (Exception exception)
+            ////{
+            //    MessageBox.Show(exception.Message);
+            //    this.Close();
+               
+
+            //}
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

@@ -26,3 +26,9 @@ C:\Users\ESSARRAJ\Documents\GitHub\cplus\CompetencePlusDAL\bin\Debug\CompetenceP
 C:\Users\ESSARRAJ\Documents\GitHub\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.csprojResolveAssemblyReference.cache
 C:\Users\ESSARRAJ\Documents\GitHub\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.dll
 C:\Users\ESSARRAJ\Documents\GitHub\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.pdb
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusDAL\bin\Debug\CompetencePlusDAL.dll
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusDAL\bin\Debug\CompetencePlusDAL.pdb
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.dll
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.pdb
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusDAL\obj\Debug\Interop.ADOX.dll
+C:\Users\ESSARRAJ\Documents\seances_cplus\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.csproj.ResolveComReference.cache

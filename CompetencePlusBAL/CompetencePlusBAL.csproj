@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="PackageAbsences\Class1.cs" />
     <Compile Include="PackageAnneeFormations\Class1.cs" />
+    <Compile Include="PackageDB\IncrementDB_BAO.cs" />
     <Compile Include="PackageEmploisTemps\Class1.cs" />
     <Compile Include="PackageFilieres\FiliereBAO.cs" />
     <Compile Include="PackageFormateurs\Class1.cs" />
