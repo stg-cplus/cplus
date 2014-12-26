@@ -98,6 +98,7 @@ namespace CompetencePlus.PackageDB
 
         private void UpgradeDaTabase()
         {
+
             String CodeLastIncrement = this.CodeLastIncrement();
             IEnumerable<IncrementationDB> ListeIncrement;
             if (CodeLastIncrement != null)
@@ -108,7 +109,9 @@ namespace CompetencePlus.PackageDB
             else {
                 ListeIncrement = this.Select();
             }
-            foreach (var increment in ListeIncrement)
+
+
+            foreach (var increment in ListeIncrement.OrderBy(i=>i.DateCreation))
             {
                 this.Create(increment);
             }
