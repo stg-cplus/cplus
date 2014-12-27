@@ -36,6 +36,12 @@ namespace CompetencePlus.PackageDB
            base.SaveWithOutExecut(incrementation);
        }
 
-       
+
+
+       public   void Update(IncrementationDB incrementation)
+       {
+           incrementation.Code = this.GenererCode(incrementation);
+           base.Update(incrementation);
+       }
     }
 }

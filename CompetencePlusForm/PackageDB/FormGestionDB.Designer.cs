@@ -30,9 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.IncTextBox = new System.Windows.Forms.TextBox();
+            this.incrementationDBBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.BtExecute = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBoxTitre = new System.Windows.Forms.TextBox();
@@ -42,14 +44,13 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btEnregistrer = new System.Windows.Forms.Button();
-            this.incrementationDBBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.codeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bt_modifier = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.incrementationDBBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.incrementationDBBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // IncTextBox
@@ -59,9 +60,13 @@
             this.IncTextBox.Location = new System.Drawing.Point(6, 87);
             this.IncTextBox.Multiline = true;
             this.IncTextBox.Name = "IncTextBox";
-            this.IncTextBox.Size = new System.Drawing.Size(386, 373);
+            this.IncTextBox.Size = new System.Drawing.Size(386, 338);
             this.IncTextBox.TabIndex = 0;
             this.IncTextBox.TextChanged += new System.EventHandler(this.IncTextBox_TextChanged);
+            // 
+            // incrementationDBBindingSource
+            // 
+            this.incrementationDBBindingSource.DataSource = typeof(CompetencePlus.PackageDB.IncrementationDB);
             // 
             // label1
             // 
@@ -100,6 +105,14 @@
             this.dataGridView1.Size = new System.Drawing.Size(315, 424);
             this.dataGridView1.TabIndex = 5;
             // 
+            // codeDataGridViewTextBoxColumn
+            // 
+            this.codeDataGridViewTextBoxColumn.DataPropertyName = "Code";
+            this.codeDataGridViewTextBoxColumn.HeaderText = "Code";
+            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
+            this.codeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.codeDataGridViewTextBoxColumn.Width = 300;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dataGridView1);
@@ -112,6 +125,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.bt_modifier);
             this.groupBox2.Controls.Add(this.textBoxTitre);
             this.groupBox2.Controls.Add(this.IncTextBox);
             this.groupBox2.Controls.Add(this.label3);
@@ -195,17 +209,15 @@
             this.btEnregistrer.UseVisualStyleBackColor = false;
             this.btEnregistrer.Click += new System.EventHandler(this.btEnregistrer_Click);
             // 
-            // incrementationDBBindingSource
+            // bt_modifier
             // 
-            this.incrementationDBBindingSource.DataSource = typeof(CompetencePlus.PackageDB.IncrementationDB);
-            // 
-            // codeDataGridViewTextBoxColumn
-            // 
-            this.codeDataGridViewTextBoxColumn.DataPropertyName = "Code";
-            this.codeDataGridViewTextBoxColumn.HeaderText = "Code";
-            this.codeDataGridViewTextBoxColumn.Name = "codeDataGridViewTextBoxColumn";
-            this.codeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.codeDataGridViewTextBoxColumn.Width = 300;
+            this.bt_modifier.Location = new System.Drawing.Point(10, 432);
+            this.bt_modifier.Name = "bt_modifier";
+            this.bt_modifier.Size = new System.Drawing.Size(75, 23);
+            this.bt_modifier.TabIndex = 3;
+            this.bt_modifier.Text = "Modifier";
+            this.bt_modifier.UseVisualStyleBackColor = true;
+            this.bt_modifier.Click += new System.EventHandler(this.bt_modifier_Click);
             // 
             // FormGestionDB
             // 
@@ -219,13 +231,13 @@
             this.Name = "FormGestionDB";
             this.Text = "GestionDB";
             this.Load += new System.EventHandler(this.FormGestionDB_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.incrementationDBBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.incrementationDBBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,5 +259,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btEnregistrer;
+        private System.Windows.Forms.Button bt_modifier;
     }
 }

@@ -117,6 +117,7 @@ namespace CompetencePlus.PackageDB
         }
 
         #endregion
+
         #region Valisation d'interface
         private void IncTextBox_TextChanged(object sender, EventArgs e)
         {
@@ -130,6 +131,16 @@ namespace CompetencePlus.PackageDB
 
         }
         #endregion
+
+        private void bt_modifier_Click(object sender, EventArgs e)
+        {
+            IncrementationDB incrementation =(IncrementationDB) incrementationDBBindingSource.Current;
+            incrementation.Titre = textBoxTitre.Text;
+            incrementation.Increment = IncTextBox.Text;
+            new IncrementDB_BAO().Update(incrementation);
+            this.refresh();
+
+        }
 
 
 

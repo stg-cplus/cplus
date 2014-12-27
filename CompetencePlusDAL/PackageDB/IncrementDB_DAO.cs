@@ -131,8 +131,13 @@ namespace CompetencePlus.PackageDB
         }
        #endregion
 
-       
-        
 
-    }
+
+
+
+       public void Update(IncrementationDB incrementation)
+       {
+           this.SaveIncrementationDBToFile(incrementation);
+       }
+   }
 }
