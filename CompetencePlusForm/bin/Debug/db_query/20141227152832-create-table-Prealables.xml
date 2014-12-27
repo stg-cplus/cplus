@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-27T15:28:32.7532435+00:00</DateCreation>
+  <Titre>create-table-Prealables</Titre>
+  <Code>20141227152832-create-table-Prealables</Code>
+  <Increment>create table Prealables
+(
+   id                   AUTOINCREMENT,
+   Pre_id               int not null,
+   nom                  varchar(254),
+   description          varchar(254),
+   ordre                int,
+   primary key (id)
+);</Increment>
+</IncrementationDB>
