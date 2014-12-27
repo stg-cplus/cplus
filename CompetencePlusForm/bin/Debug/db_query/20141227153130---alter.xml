@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-27T15:31:30.482409+00:00</DateCreation>
+  <Titre>--alter</Titre>
+  <Code>20141227153130---alter</Code>
+  <Increment>
+alter table Modules add constraint FK_association1 foreign key (Pre_id)
+      references Precisions (id) ;
+
+</Increment>
+</IncrementationDB>

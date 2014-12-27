@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-27T15:43:38.4330454+00:00</DateCreation>
+  <Titre>create-table-SeancePlannings</Titre>
+  <Code>20141227154338-create-table-SeancePlannings</Code>
+  <Increment>create table SeancePlannings
+(
+   For_id               int not null,
+   id                 AUTOINCREMENT,
+   jour                 int,
+   heuredebut           int,
+   heureFin             int
+);</Increment>
+</IncrementationDB>
