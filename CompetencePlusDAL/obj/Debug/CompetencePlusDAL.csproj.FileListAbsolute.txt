@@ -39,3 +39,4 @@ C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusDAL\obj\Debug\In
 C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.csproj.ResolveComReference.cache
 C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.dll
 C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.pdb
+C:\Users\ESSARRAJ\Documents\GitHub\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.csprojResolveAssemblyReference.cache

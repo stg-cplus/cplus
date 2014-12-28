@@ -12,14 +12,14 @@
    Precision_id         int,
    nom                  varchar(254),
    duree                int,
-   strategieEnseignement varchar(254),
-   apprentisage         varchar(254),
-   evaluation           varchar(254),
-   materiel             varchar(254),
-   equipement           varchar(254),
-   competence           varchar(254),
-   presentation         varchar(254),
-   description          varchar(254),
+   strategieEnseignement Memo,
+   apprentisage         Memo,
+   evaluation           Memo,
+   materiel             Memo,
+   equipement           Memo,
+   competence           Memo,
+   presentation         Memo,
+   description          Memo,
    primary key (id)
 );</Increment>
 </IncrementationDB>

@@ -8,7 +8,7 @@
    id                AutoIncrement Primary Key ,
    titre                varchar(254),
    code                 varchar(254),
-   description          varchar(254)
+   description          Memo
 );
 </Increment>
 </IncrementationDB>

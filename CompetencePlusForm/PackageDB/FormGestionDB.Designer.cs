@@ -44,7 +44,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btEnregistrer = new System.Windows.Forms.Button();
-            this.bt_modifier = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.incrementationDBBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -125,7 +124,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.bt_modifier);
             this.groupBox2.Controls.Add(this.textBoxTitre);
             this.groupBox2.Controls.Add(this.IncTextBox);
             this.groupBox2.Controls.Add(this.label3);
@@ -209,16 +207,6 @@
             this.btEnregistrer.UseVisualStyleBackColor = false;
             this.btEnregistrer.Click += new System.EventHandler(this.btEnregistrer_Click);
             // 
-            // bt_modifier
-            // 
-            this.bt_modifier.Location = new System.Drawing.Point(10, 432);
-            this.bt_modifier.Name = "bt_modifier";
-            this.bt_modifier.Size = new System.Drawing.Size(75, 23);
-            this.bt_modifier.TabIndex = 3;
-            this.bt_modifier.Text = "Modifier";
-            this.bt_modifier.UseVisualStyleBackColor = true;
-            this.bt_modifier.Click += new System.EventHandler(this.bt_modifier_Click);
-            // 
             // FormGestionDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,6 +247,5 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button btEnregistrer;
-        private System.Windows.Forms.Button bt_modifier;
     }
 }
