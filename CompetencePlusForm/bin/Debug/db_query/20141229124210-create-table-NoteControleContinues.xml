@@ -9,7 +9,9 @@
    id                   autoincrement primary key,
    Stagiaire_id         int not null,
    valeur               float,
+   ControleContinue_id  int not null,
 
-foreign key (Stagiaire_id) references Stagiaires(id)
+foreign key (Stagiaire_id) references Stagiaires(id),
+foreign key (ControleContinue_id) references ControleContinues(id)
 );</Increment>
 </IncrementationDB>

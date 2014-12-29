@@ -4,6 +4,6 @@
   <DateCreation>2014-12-29T20:02:21.8411016+00:00</DateCreation>
   <Titre>insert-into-NoteControleContinues</Titre>
   <Code>2014122920221-insert-into-NoteControleContinues</Code>
-  <Increment>insert into NoteControleContinues (Stagiaire_id,valeur) values (1,'19');
+  <Increment>insert into NoteControleContinues (Stagiaire_id,valeur,ControleContinue_id) values (1,'19',1);
 </Increment>
 </IncrementationDB>
