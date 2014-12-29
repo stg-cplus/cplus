@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T15:01:16.812211+00:00</DateCreation>
+  <Titre>insert-into-ControleContinues</Titre>
+  <Code>2014122915116-insert-into-ControleContinues</Code>
+  <Increment>insert into ControleContinues (Formation_id,code,titre,commentaire,dateControle) values(1,"CC01","Controle Continue n01","",'27/02/2015');
+</Increment>
+</IncrementationDB>

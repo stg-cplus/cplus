@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T14:55:30.4754017+00:00</DateCreation>
+  <Titre>insert-into-Precisions</Titre>
+  <Code>20141229145530-insert-into-Precisions</Code>
+  <Increment>insert into Precisions
+ (ContenuePrecision_id,nom,description,duree,ordre) values(1,"Mode Connecter","Dans cette Precisions
+ on va etudier comment connecter aux base de donnees avec c# est class myconnection",15,1);
+</Increment>
+</IncrementationDB>

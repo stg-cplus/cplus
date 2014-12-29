@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T20:04:35.5767509+00:00</DateCreation>
+  <Titre>insert-into-NoteContenuePrecisions</Titre>
+  <Code>2014122920435-insert-into-NoteContenuePrecisions</Code>
+  <Increment>insert into NoteContenuePrecisions (valeur,ContenuePrecision_id,Stagiaire_id) values ("19",1,1);</Increment>
+</IncrementationDB>

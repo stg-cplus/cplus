@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T14:58:48.7727437+00:00</DateCreation>
+  <Titre>insert-into-Formations</Titre>
+  <Code>20141229145848-insert-into-Formations</Code>
+  <Increment>insert into Formations (Formateur_Id,Module_id,AnneeFormation_id,Groupe_id) values(1,1,1,1);
+</Increment>
+</IncrementationDB>

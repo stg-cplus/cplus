@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T14:56:58.4864357+00:00</DateCreation>
+  <Titre>insert-into-Modules</Titre>
+  <Code>20141229145658-insert-into-Modules</Code>
+  <Increment>insert into Modules
+ (nom,duree,strategieEnseignement,apprentisage,evaluation,materiel,equipement,competence,presentation,description,Filiere_id,Precision_id) values("Client Server",120,"","","","","","","","",1,1);
+</Increment>
+</IncrementationDB>

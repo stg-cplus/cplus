@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T14:39:21.2929676+00:00</DateCreation>
+  <Titre>insert-into-AnneeFormations</Titre>
+  <Code>20141229143921-insert-into-AnneeFormations</Code>
+  <Increment>insert into AnneeFormations (titre,dateDebut,dateFin) values("2014 - 2015",'03/09/2014','31/07/2015');</Increment>
+</IncrementationDB>

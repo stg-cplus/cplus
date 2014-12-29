@@ -20,6 +20,15 @@
    competence           Memo,
    presentation         Memo,
    description          Memo,
-   primary key (id)
+   primary key (id),
+   
+ foreign key (Filiere_id)
+      references Filieres(id),
+	  
+	  
+ foreign key (Precision_id)
+      references Precisions(id)
+	  
+	  
 );</Increment>
 </IncrementationDB>
