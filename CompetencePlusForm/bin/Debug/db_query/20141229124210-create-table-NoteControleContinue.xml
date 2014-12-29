@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T12:42:10.791692+00:00</DateCreation>
+  <Titre>create-table-NoteControleContinue</Titre>
+  <Code>20141229124210-create-table-NoteControleContinue</Code>
+  <Increment>create table NoteControleContinue
+(
+   id                   autoincrement primary key,
+   Stagiaire_id         int not null,
+   valeur               float,
+
+foreign key (Stagiaire_id) references Stagiaires(id)
+);</Increment>
+</IncrementationDB>

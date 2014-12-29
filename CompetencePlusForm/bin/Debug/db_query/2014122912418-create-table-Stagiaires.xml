@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T12:41:08.0981061+00:00</DateCreation>
+  <Titre>create-table-Stagiaires</Titre>
+  <Code>2014122912418-create-table-Stagiaires</Code>
+  <Increment>create table Stagiaires
+(
+   id                   autoincrement  primary key,
+   Filiere_id           int not null,
+   nom                  varchar(254),
+   prenom               varchar(254),
+   datenaissance        datetime,
+   sexe                 int,
+   cin                  varchar(254),
+   email                varchar(254),
+   telephone            varchar(254),
+   adress               memo,
+   profilImage          varchar(254),
+   etat                 int,
+foreign key (Filiere_id)
+references Filieres(id)
+);</Increment>
+</IncrementationDB>

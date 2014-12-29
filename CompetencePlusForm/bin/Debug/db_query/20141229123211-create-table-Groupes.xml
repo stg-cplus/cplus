@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T12:32:11.7504288+00:00</DateCreation>
+  <Titre>create-table-Groupes</Titre>
+  <Code>20141229123211-create-table-Groupes</Code>
+  <Increment>create table Groupes
+(
+   id                   autoincrement,
+   nom                  varchar(254),
+   code                 varchar(254),
+   description          memo,
+   Filiere_id           int not null,
+   AnneeFormation_id    int not null,
+
+   primary key (id),
+
+ foreign key (Filiere_id)
+      references Filieres(id),
+ foreign key (AnneeFormation_id)
+      references AnneeFormations(id)
+
+);</Increment>
+</IncrementationDB>

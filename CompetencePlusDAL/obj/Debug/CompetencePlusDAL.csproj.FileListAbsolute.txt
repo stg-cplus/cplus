@@ -40,3 +40,9 @@ C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusDAL\obj\Debug\Co
 C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.dll
 C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.pdb
 C:\Users\ESSARRAJ\Documents\GitHub\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.csprojResolveAssemblyReference.cache
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusDAL\bin\Debug\CompetencePlusDAL.dll
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusDAL\bin\Debug\CompetencePlusDAL.pdb
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusDAL\obj\Debug\Interop.ADOX.dll
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.csproj.ResolveComReference.cache
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.dll
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusDAL\obj\Debug\CompetencePlusDAL.pdb

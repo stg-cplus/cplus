@@ -23,15 +23,14 @@ namespace CompetencePlus.PackageFilieres
         {
             filiereBindingSource.DataSource = null;
             filiereBindingSource.DataSource = new FiliereBAO().Select();
-            try
-            {
-                Filiere f = (Filiere)filiereBindingSource.Current;
-                TitreLabel.Text = f.Titre;
-                CodeLabel.Text = f.Code;
-            }
-            catch (Exception e) {
-                MessageBox.Show(e.Message);
-            }
+        
+                Filiere filiere = (Filiere)filiereBindingSource.Current;
+                if (filiere != null)
+                {
+                    TitreLabel.Text = filiere.Titre;
+                    CodeLabel.Text = filiere.Code;
+               }
+        
 
         }
 
