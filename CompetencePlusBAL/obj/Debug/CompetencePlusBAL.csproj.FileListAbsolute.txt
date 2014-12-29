@@ -54,3 +54,10 @@ C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusBAL\bin\Debug\Co
 C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.csprojResolveAssemblyReference.cache
 C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.dll
 C:\Users\chabba\Desktop\tachesemploidetemps\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.pdb
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusBAL\bin\Debug\CompetencePlusBAL.dll
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusBAL\bin\Debug\CompetencePlusBAL.pdb
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusBAL\bin\Debug\CompetencePlusDAL.dll
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusBAL\bin\Debug\CompetencePlusDAL.pdb
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.csprojResolveAssemblyReference.cache
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.dll
+C:\Users\Zbaaakh\Desktop\NotesCplus\cplus\CompetencePlusBAL\obj\Debug\CompetencePlusBAL.pdb

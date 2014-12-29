@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T12:34:02.2877512+00:00</DateCreation>
+  <Titre>create-table-ControleContinues</Titre>
+  <Code>2014122912342-create-table-ControleContinues</Code>
+  <Increment>create table ControleContinues
+(
+   id                   autoincrement primary key,
+   Formation_id         int not null,
+   code                 varchar(254),
+   titre                varchar(254),
+   commentaire          memo,
+   dateControle datetime,
+
+ foreign key (Formation_id)
+      references Formations(id)
+);</Increment>
+</IncrementationDB>

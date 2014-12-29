@@ -2,9 +2,9 @@
 <IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Id>0</Id>
   <DateCreation>2014-12-28T18:04:13.8800676+00:00</DateCreation>
-  <Titre>create-table-Formateur</Titre>
-  <Code>2014122818413-create-table-Formateur</Code>
-  <Increment>create table Formateur
+  <Titre>create-table-Formateurs</Titre>
+  <Code>2014122818413-create-table-Formateurs</Code>
+  <Increment>create table Formateurs
 (
    Id            AutoIncrement,
    
