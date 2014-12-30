@@ -56,6 +56,12 @@ namespace CompetencePlus.PackageDB
             set { decrement = value; }
         }
 
+        public override bool Equals(object obj)
+        {
+            IncrementationDB x = (IncrementationDB)obj;
+
+            return (this.Code == x.code);
+        }
          
     }
 }

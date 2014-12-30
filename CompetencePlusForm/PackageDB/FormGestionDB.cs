@@ -23,7 +23,7 @@ namespace CompetencePlus.PackageDB
         #region facilitateur
         public void refresh()
         {
-            incrementationDBBindingSource.DataSource = new IncrementDB_BAO().Select();
+            incrementationDBBindingSource.DataSource = new IncrementDB_BAO().SelectFromXML();
         }
         private void charger(IncrementationDB increment)
         {

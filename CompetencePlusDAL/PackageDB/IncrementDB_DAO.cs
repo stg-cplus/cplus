@@ -94,7 +94,7 @@ namespace CompetencePlus.PackageDB
            this.ValidateQuery(incrementation);
            this.SaveIncrementationDBToFile(incrementation);
        }
-       public IEnumerable<IncrementationDB> Select()
+       public IEnumerable<IncrementationDB> SelectFromXML()
        {
 
            List<IncrementationDB> List = new List<IncrementationDB>();
@@ -108,6 +108,21 @@ namespace CompetencePlus.PackageDB
            }
 
            return List.OrderByDescending(i => i.DateCreation).ToList<IncrementationDB>();
+       }
+       public IEnumerable<IncrementationDB> SelectFromDB()
+       {
+
+           List<IncrementationDB> listIncrementationDB = new List<IncrementationDB>();
+           string query = "Select from VersionDB";
+           OleDbDataReader listeRox = MyConnection.ExecuteReader(query);
+           while (listeRox.Read())
+           {
+               IncrementationDB incrementationDB = new IncrementationDB();
+               incrementationDB.Code = (string) listeRox["Version"];
+               listIncrementationDB.Add(incrementationDB);
+           }
+
+           return listIncrementationDB;
        }
        public void Delete(IncrementationDB incrementation)
        {
