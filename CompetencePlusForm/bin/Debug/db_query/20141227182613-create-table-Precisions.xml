@@ -10,7 +10,7 @@
    
    ContenuePrecision_id int,
    nom                  varchar(254),
-   description          varchar(254),
+   description          Memo,
    duree                int,
    ordre                int,
    primary key (id)
