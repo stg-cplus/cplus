@@ -7,7 +7,7 @@ using System.Runtime.Serialization;
 namespace CompetencePlus.PackageDB
 {
   
-    public class IncrementationDB 
+    public class IncrementationDB : IEqualityComparer<IncrementationDB>
     {
         int id;
 
@@ -56,12 +56,27 @@ namespace CompetencePlus.PackageDB
             set { decrement = value; }
         }
 
-        public override bool Equals(object obj)
-        {
-            IncrementationDB x = (IncrementationDB)obj;
 
-            return (this.Code == x.code);
+
+
+       
+
+        public bool Equals(IncrementationDB x, IncrementationDB y)
+        {
+            ////Check whether the compared object is null.
+            //if (Object.ReferenceEquals(other, null)) return false;
+
+            ////Check whether the compared object references the same data.
+            //if (Object.ReferenceEquals(this, other)) return true;
+
+            //Check whether the products' properties are equal.
+            return x.code.Equals(y.Code);
         }
-         
+
+        public int GetHashCode(IncrementationDB obj)
+        {
+       
+            return obj.code.GetHashCode();
+        }
     }
 }

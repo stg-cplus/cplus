@@ -47,8 +47,8 @@ namespace CompetencePlus.PackageStagiaires
             {
                 Stagiaire s = new Stagiaire();
                 s.Id = read.GetInt32(0);
-                s.Nom = read.GetString(1);
-                s.Prenom = read.GetString(2);
+                s.Nom = (string) read["Nom"];
+                s.Prenom = (string)read["Prenom"];
                 s.DateNaissance = read.GetDateTime(3);
                 s.Sexe = read.GetBoolean(4);
                 s.Cin = read.GetString(5);

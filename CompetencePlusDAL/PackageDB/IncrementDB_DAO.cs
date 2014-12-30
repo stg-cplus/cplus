@@ -113,7 +113,7 @@ namespace CompetencePlus.PackageDB
        {
 
            List<IncrementationDB> listIncrementationDB = new List<IncrementationDB>();
-           string query = "Select from VersionDB";
+           string query = "Select * from VersionDB";
            OleDbDataReader listeRox = MyConnection.ExecuteReader(query);
            while (listeRox.Read())
            {
