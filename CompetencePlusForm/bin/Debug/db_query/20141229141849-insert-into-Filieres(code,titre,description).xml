@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T14:18:49.2705+00:00</DateCreation>
+  <Titre>insert-into-Filieres(code,titre,description)</Titre>
+  <Code>20141229141849-insert-into-Filieres(code,titre,description)</Code>
+  <Increment>insert into Filieres(code,titre,description) values('TDI','Technicien en développement informatique',"Le programme de Technicien spécialisé en développement informatique s’inscrit dans les orientations retenues par l'Office de la formation professionnelle et de la promotion du travail,concernant la formation professionnelle.");</Increment>
+</IncrementationDB>

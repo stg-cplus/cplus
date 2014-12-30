@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T14:55:23.5080032+00:00</DateCreation>
+  <Titre>insert-into-ContenuePrecisions</Titre>
+  <Code>20141229145523-insert-into-ContenuePrecisions</Code>
+  <Increment>insert into ContenuePrecisions (nom,description,duree,ordre) values ("Contenue Precisions pour Precisions
+ 1","cette est Contenue Precisions pour Precisions
+ 1",3,1);
+</Increment>
+</IncrementationDB>

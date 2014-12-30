@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T14:19:51.8070769+00:00</DateCreation>
+  <Titre>insert-into-Filieres</Titre>
+  <Code>20141229141951-insert-into-Filieres</Code>
+  <Increment>insert into Filieres (code,titre,description) values('Infographie','Infographie',"Le Technicien Spécialisé en Infographie est un professionnel chargé de réaliser des produits de prépresse destinés à l’impression et à l’édition.");</Increment>
+</IncrementationDB>

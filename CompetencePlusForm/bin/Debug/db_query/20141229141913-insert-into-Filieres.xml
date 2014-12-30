@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T14:19:13.6558948+00:00</DateCreation>
+  <Titre>insert-into-Filieres</Titre>
+  <Code>20141229141913-insert-into-Filieres</Code>
+  <Increment>insert into Filieres (code,titre,description) values('TDM','Technicien en développement multimedia',"Le Technicien Spécialiste en Développement Multimédia a pour fonction principale de réaliser des applications multimédia et de développer des solutions web. Il intervient après la phase de création artistique réalisée par l’infographiste.");
+</Increment>
+</IncrementationDB>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T14:42:51.0339641+00:00</DateCreation>
+  <Titre>insert-into-Stagiaires</Titre>
+  <Code>20141229144251-insert-into-Stagiaires</Code>
+  <Increment>insert into Stagiaires (nom,prenom,datenaissance,sexe,cin,email,telephone,adress,etat,Filiere_id) values("Hamza","Zbakh","27/02/1996",1,"KB132162","hamza.zbaakh@gmail.com","0698077830","Tanger tanger",1,1);
+</Increment>
+</IncrementationDB>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementationDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>0</Id>
+  <DateCreation>2014-12-29T14:19:31.7339288+00:00</DateCreation>
+  <Titre>insert-into-Filieres</Titre>
+  <Code>20141229141931-insert-into-Filieres</Code>
+  <Increment>insert into Filieres (code,titre,description) values('TMSIR','Techniques en maintenance et support informatique et reseaux',"Le Techniques de réseaux informatiques prépare à l’exercice du métier de technicien spécialisé en Techniques de réseaux informatiques");
+</Increment>
+</IncrementationDB>
